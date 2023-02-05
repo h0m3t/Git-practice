@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Finance Flow</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center">Finance Flow</h1>
+      <div class="d-flex justify-content-between">
+        <div class="p-2">
+          <h5>Balance:</h5>
+          <p id="balance">$0.00</p>
+        </div>
+        <div class="p-2">
+          <h5>Last Transaction:</h5>
+          <p id="lastTransaction">None</p>
+        </div>
+      </div>
+      <hr>
+      <h3>Add Funds</h3>
+      <form>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="number" class="form-control" id="amount" aria-describedby="amountHelp">
+          <small id="amountHelp" class="form-text text-muted">Enter the amount you want to add to your wallet.</small>
+        </div>
+        <button type="submit" class="btn btn-success">Add Funds</button>
+      </form>
+      <hr>
+      <h3>Withdraw Funds</h3>
+      <form>
+        <div class="form-group">
+          <label for="withdrawAmount">Amount</label>
+          <input type="number" class="form-control" id="withdrawAmount" aria-describedby="withdrawAmountHelp">
+          <small id="withdrawAmountHelp" class="form-text text-muted">Enter the amount you want to withdraw from your wallet.</small>
+        </div>
+        <button type="submit" class="btn btn-danger">Withdraw Funds</button>
+      </form>
+    </div>
+  </body>
+</html>
